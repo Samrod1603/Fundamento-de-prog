@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace trabajo_I
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //ingreso de datos
+            Console.Write("Ingrese Y y Z :");
+            double y = double.Parse(Console.ReadLine());
+            double z = double.Parse(Console.ReadLine());
+
+            //calculo de los valores
+            double t = (y * y + z * z);
+            double a = Math.Atan(y / t); 
+            double aGrados = a * (Math.PI/ 180.0);
+            double c = Math.Atan(z / y);
+            double cGrados = c * (Math.PI / 180.0);
+
+            //imprimir salida
+            Console.WriteLine("t:" + t + "a:" + aGrados + "c" + cGrados);
+        }
+    }
+}
