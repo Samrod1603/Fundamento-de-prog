@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace trabajo_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Ingreso de datos
+            Console.WriteLine("ingrese c y z:");
+            double cGrados = double.Parse(Console.ReadLine());
+            double z = double.Parse(Console.ReadLine());
+
+            //conversion del angulo a radian
+            double c = cGrados * (Math.PI / 180.0);
+
+            //calculo de los valores
+            double a = (180 - ( 90 + c));
+            double y = (z / Math.Tan(c));
+            double t = (y * y + z * z);
+
+            //imprimir salida
+            Console.WriteLine("a:" + a + "y:" + y + "t:" + t);
+
+        }
+    }
+}
