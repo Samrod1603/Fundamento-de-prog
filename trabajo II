@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // ingreso de datos
+            Console.WriteLine("ingrese t (hipotenusa):");
+            double t = double.Parse(Console.ReadLine());
+            Console.WriteLine(" ingrese a (angulo en grados):"); 
+            double aGrados = double.Parse(Console.ReadLine());
+
+            //conversion de angulo a radian
+            double a = aGrados * (Math.PI / 180.0);
+
+            //calculo de los valores 
+            double y = (a * Math.Sin(t));
+            double c = Math.Acos(y / t);
+            double cGrados = c * (Math.PI / 180.0);
+            double z = (Math.Tan(c) * y);
+
+            //imprimir salida
+            Console.WriteLine("y:" + y + "c:" + cGrados + "z:" + z); 
+            
+           
+
+    
+        }
+    }
+}
