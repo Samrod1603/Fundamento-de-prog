@@ -71,8 +71,9 @@ namespace TareaClase10
                         
                     }
 
-                    if(total >puntajemaximo)
+                    if(total <= 21 && total >puntajemaximo)
                     {
+
                         puntajemaximo = total;
                         jugadormaximo = nombrejugador;
                     }
@@ -82,11 +83,13 @@ namespace TareaClase10
                     
 
                 }
-                Console.WriteLine("el juego termino, el jugador con mayor puntaje fue: " + jugadormaximo + ",con: " + puntajemaximo); 
+
+                Console.WriteLine("el juego termino, el jugador con mejor puntaje: " + jugadormaximo + ",con: " + puntajemaximo); 
             }
         }
     }
 }
+
 
 
 
