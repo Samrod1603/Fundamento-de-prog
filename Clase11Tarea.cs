@@ -43,14 +43,15 @@ namespace ForDatos
         {
             mayor = dist;
         }
-         if(dist2 > mayor)
+        if(dist2 > mayor)
         {
             mayor = dist2;
         }
-         if(dist3 > mayor)
+        if(dist3 > mayor)
         {
             mayor = dist3;
         }
+        Console.WriteLine("la distancia mayor: " + mayor); 
 
         
         
