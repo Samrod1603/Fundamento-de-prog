@@ -39,7 +39,18 @@ namespace ForDatos
         double dist2 = Math.Sqrt((coordenadasx[2] - coordenadasX[1]) * (coordenadas[2] - coordenadas[1]) + (coordenadasY[2] - coordenadasY[1])*(coordenadasY[2] -coordenadasY[1])); 
         double dist3 = Math.Sqrt((coordenadasx[3] - coordenadasX[2]) * (coordenadas[3] - coordenadas[2]) + (coordenadasY[3] - coordenadasY[2])*(coordenadasY[3] -coordenadasY[2])); 
 
-      
+        if(dist > mayor)
+        {
+            mayor = dist;
+        }
+         if(dist2 > mayor)
+        {
+            mayor = dist2;
+        }
+         if(dist3 > mayor)
+        {
+            mayor = dist3;
+        }
 
         
         
